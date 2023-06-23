@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*CalculaterContanier div will 
+be centered both vertically and horizontally on 
+the page.
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+#CalculaterContanier{
+    border: 1px solid black;
+    width: 355px;
+    height: 540px;
+    margin: auto;
+    text-align: center;
+    background-color: #FCF5E5;
+    border-radius: 15px;
+    box-shadow: 10px 10px;
+
+
+}
+#buttonsContanier{
+    text-align: center;
+    padding: 5px;
+    background-color: #B8F3D7;
+    border-radius: 15px;
+    height: auto;
+}
+#buttonsContanier div{
+    padding-top: 20px;
+    padding-bottom: 1px;
+    /*By default, flex items (buttons in this case)
+     will try to fit into a single row and adjust 
+     their widths accordingly.*/
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+ 
+input{
+    width: 300px;
+     padding: 35px 10px;
+     margin-top: 5px;
+     background-color: #FCF5E5;
+     border: none;
+     font-family: 'IBM Plex Sans Arabic', sans-serif;
+     font-weight: 700;
+     font-size: 30px;
+     text-align: right;
+      
+}
+button{
+    /*This property distributes available space 
+    equally among all the buttons within each row.*/
+    flex: 1;
+    padding: 20px 30px;
+    background-color: #FCF5E5;
+    border: black 2px solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px;
+ }
+#RESULT{
+    
+    padding: 20px 60px;
+}

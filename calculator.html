@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@500;600;700&family=Moirai+One&display=swap" rel="stylesheet">
+    <title>Calculater Odin project</title>
+</head>
+<body>
+    <div id="CalculaterContanier">
+        <!--the display element will be used to show the final result.-->
+        <div id="displayResult">
+            <!--he input field will be used to store and update the current result-->
+            <input id="result"  type="text">
+        </div>
+        <div id="buttonsContanier">
+            <div>
+                <button onclick="deleteNumber()">DEL</button>
+                <button>LOG</button>
+                <button onclick="clearResult()">C</button>
+                <button onclick="appendOperator('/')">/</button>
+            </div>
+            <div>
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button onclick="appendOperator('*')">x</button>
+            </div>
+            <div>
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button onclick="appendOperator('+')">+</button>
+            </div>
+            <div>
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button onclick="appendOperator('-')">-</button>
+            </div>
+            <div>
+                <button id="Calculater">RESULT</button>
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="appendDecimal()">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
